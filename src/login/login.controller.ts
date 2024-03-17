@@ -7,7 +7,7 @@ export class LoginController {
   @Post()
   create(@Body() data: LoginDataType) {
     return {
-      success: 1,
+      success: true,
       message: `Successfull login Username ${data.Username} Password ${data.Password}`,
     };
   }
